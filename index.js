@@ -47,7 +47,7 @@ function server() {
     },
   });
 
-  serverApollo.listen({ port: process.env.PROT || 4000 }).then(({ url }) => {
+  serverApollo.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
     console.log("###############################");
     console.log(`Servidor listo en la url ${url}`);
     console.log("###############################");
